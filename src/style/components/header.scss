@@ -1,0 +1,70 @@
+.header{
+  padding: 20px 0;
+  &__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.header-logo{
+  display: flex;
+  align-items: center;
+  &__icon{}
+  &__title{
+    padding: 20px;
+    color: #4793FF;
+    font-weight: bold;
+    font-size: 25px;
+  }
+}
+.header-controls{
+  display: flex;
+  align-items: center;
+  position: relative;
+  &__theme-switcher{
+    padding: 20px;
+    cursor: pointer;
+    margin: 0 15px 0 0;
+    @media (max-width: 500px) {
+      padding: 10px;
+    }
+  }
+  &__form{
+    margin: 0 0 0 15px;
+  }
+  @keyframes anim {
+    0% {transform: translate(100%, 100%);}
+    100% {transform: translate(0, 100%)}
+  }
+  &__form--collapsed{
+    display: none;
+    padding: 10px;
+    position: absolute;
+    z-index: 10;
+    bottom: -5px;
+    right: 0;
+    background: #ffffff;
+  }
+  &__form--active{
+    display: block;
+    animation: anim .3s 1 forwards;
+    background: #4793FF;
+    border-radius: 7px;
+    box-shadow: var(--box-shadow);
+  }
+  &__input{
+    padding: 10px;
+    color: var(--text-color);
+    border-radius: 5px;
+    font-size: 18px;
+    background: var(--component-bg);
+    box-shadow: var(--box-shadow);
+  }
+  &__search-button{
+    padding: 20px;
+    background: inherit;
+    @media (max-width: 500px) {
+      padding: 10px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import "normalize-css-ultimate/normalize-ultimate.css";
+@import "variables";
+
+body {
+  background: var(--body-bg);
+  font-family: Montserrat;
+}
+#root {
+  overflow: hidden;
+}
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@import "components/header";
+
+@import "components/current-weather";
+
+@import "components/daily-forecast";
+
+@import "components/main-page";
+
+@import "components/not-found-page";
+
+@import "components/error-message";

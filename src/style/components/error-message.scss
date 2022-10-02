@@ -1,0 +1,10 @@
+.error-message {
+  &__container {
+    margin-top: 100px;
+  }
+  &__text {
+    text-align: center;
+    font-size: 25px;
+    color: var(--text-color);
+  }
+}
